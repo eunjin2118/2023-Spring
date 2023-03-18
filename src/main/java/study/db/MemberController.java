@@ -49,5 +49,22 @@ public class MemberController {
         return result;
     }
 
+    @PatchMapping("/update_member/{id}")
+    public Map<String, Object> updateMember(@PathVariable("id") Integer id,
+                               @RequestBody Map<String, Object> modification){
+        Optional<Member> result = repository.findById(id);
+        Member member = result.get();
+        if(modification.get("password") != null) {
+            member.setPassword(modification.get("password").toString());
+        }
+        if(modification.get("name") != null) {
+            member.setName(modification.get("name").toString());
+        }
 
+        repository.save(member);
+
+        Map<String, Object> r = new HashMap<>();
+        r.put("result", "success");
+        return r;
+    }
 }
