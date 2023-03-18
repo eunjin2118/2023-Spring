@@ -32,11 +32,22 @@ public class MemberController {
     }
 
     @DeleteMapping("/delete_member/{id}")
-    public Map<String, Object> deleteMeber(@PathVariable("id") Integer id){
+    public Map<String, Object> deleteMember(@PathVariable("id") Integer id){
         repository.deleteById(id);
 
         Map<String, Object> result = new HashMap<>();
         result.put("result", "success");
         return result;
     }
+
+    @DeleteMapping("/delete_members")
+    public Map<String, Object> deleteMembers(){
+        repository.deleteAll();
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("result", "success");
+        return result;
+    }
+
+
 }
