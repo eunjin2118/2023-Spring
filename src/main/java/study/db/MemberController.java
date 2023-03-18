@@ -50,7 +50,7 @@ public class MemberController {
     }
 
     @PatchMapping("/update_member/{id}")
-    public Map<String, Object> updateMember(@PathVariable("id") Integer id,
+    public Member updateMember(@PathVariable("id") Integer id,
                                @RequestBody Map<String, Object> modification){
         Optional<Member> result = repository.findById(id);
         Member member = result.get();
@@ -63,8 +63,6 @@ public class MemberController {
 
         repository.save(member);
 
-        Map<String, Object> r = new HashMap<>();
-        r.put("result", "success");
-        return r;
+        return member;
     }
 }
