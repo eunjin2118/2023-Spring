@@ -25,4 +25,9 @@ public class MemberController {
         Optional<Member> result = repository.findById(id);
         return result.get();
     }
+
+    @GetMapping("/get_members")
+    public Iterable<Member> getMembers() {
+        return repository.findAll();
+    }
 }
