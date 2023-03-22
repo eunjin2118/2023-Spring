@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context-5.0.2.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="s" class="kr.hs.study.beans.Sequence">
+        <constructor-arg value="s1" type="String"/>
+        <constructor-arg value="s2" type="String"/>
+    </bean>
+
+    <bean id="c" class="kr.hs.study.beans.Calculate">
+        <constructor-arg value="10" />
+        <constructor-arg value="20" />
+        <constructor-arg value="30" />
+    </bean>
+
+    <bean id="cp" class="kr.hs.study.beans.Comparison">
+        <constructor-arg value="10" />
+        <constructor-arg value="10" />
+    </bean>
+
+    <bean id="e" class="kr.hs.study.beans.Even">
+        <constructor-arg value="1" />
+        <constructor-arg value="2" />
+        <constructor-arg value="3" />
+    </bean>
+
+    <bean id="tdi" class="kr.hs.study.beans.TwoDigitInteger">
+        <constructor-arg value="11" />
+    </bean>
+
+    <bean id="t" class="kr.hs.study.beans.Triangle">
+        <constructor-arg value="21" />
+        <constructor-arg value="12" />
+        <constructor-arg value="14" />
+    </bean>
+
+</beans>
