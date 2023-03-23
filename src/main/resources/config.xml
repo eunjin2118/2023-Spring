@@ -42,4 +42,24 @@
         <constructor-arg value="14" />
     </bean>
 
+    <bean id="sc" class="kr.hs.study.beans.Score">
+        <constructor-arg value="60" />
+        <constructor-arg value="84" />
+        <constructor-arg value="99" />
+    </bean>
+
+    <bean id="mm" class="kr.hs.study.beans.MaxMin">
+        <constructor-arg value="92" />
+        <constructor-arg value="32" />
+        <constructor-arg value="46" />
+    </bean>
+
+    <bean id="fn" class="kr.hs.study.beans.FiveNum">
+        <constructor-arg value="12" />
+        <constructor-arg value="32" />
+        <constructor-arg value="47" />
+        <constructor-arg value="21" />
+        <constructor-arg value="56" />
+    </bean>
+
 </beans>

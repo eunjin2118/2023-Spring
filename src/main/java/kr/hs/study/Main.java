@@ -27,6 +27,16 @@ public class Main {
         Triangle t = ctx.getBean("t", Triangle.class);
         t.sides();
 
+        Score sc = ctx.getBean("sc", Score.class);
+        sc.studentsNum();
+
+        MaxMin mm = ctx.getBean("mm", MaxMin.class);
+        mm.Max();
+        mm.Min();
+
+        FiveNum fn = ctx.getBean("fn", FiveNum.class);
+        fn.sumAvg();
+
         ctx.close();
     }
 }
