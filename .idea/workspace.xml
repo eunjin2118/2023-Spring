@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a211caef-d876-4057-a0b6-de2d8a276202" name="Changes" comment="ComponentScan로 객체 만들기">
+    <list default="true" id="a211caef-d876-4057-a0b6-de2d8a276202" name="Changes" comment="생성자에서 @Vaule쓰기">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hs/study/beans/DataBean1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hs/study/beans/DataBean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hs/study/beans/TestBean2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/hs/study/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hs/study/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hs/study/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hs/study/config/BeanConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kr.hs.study.beans" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,11 +68,27 @@
       <option name="project" value="LOCAL" />
       <updated>1680760083962</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Value로 클래스변수에 값 대입">
+      <created>1680760419155</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680760419155</updated>
+    </task>
+    <task id="LOCAL-00003" summary="생성자에서 @Vaule쓰기">
+      <created>1680761325855</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680761325855</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ComponentScan로 객체 만들기" />
-    <option name="LAST_COMMIT_MESSAGE" value="ComponentScan로 객체 만들기" />
+    <MESSAGE value="Value로 클래스변수에 값 대입" />
+    <MESSAGE value="생성자에서 @Vaule쓰기" />
+    <option name="LAST_COMMIT_MESSAGE" value="생성자에서 @Vaule쓰기" />
   </component>
 </project>
